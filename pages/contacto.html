@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel='stylesheet' href='../css/style.css' type='text/css'/>
+
+    <title>Contacto y Ubicacion del Hotel Soleares</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../assets/img/logo.png">
+        <nav>
+            <ul class="menuPrincipal">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./habitaciones.html">Habitaciones</a>
+                </li>
+                <li>
+                    <a href="./servicios.html">Nuestros Servicios</a>
+                </li>
+                <li>
+                    <a href="./lugaresrecomendados.html">Lugares de Interes</a>
+                </li>
+                <li>
+                    <a class="menuactivo" href="./contacto.html">Ubicacion y Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img class="imagenBanner" src="../assets/img/mapa.png">
+
+        <h1 class="titulo_principal">Contactenos</h1>
+
+        <form action="/ruta-del-procesador-del-formulario" method="post">
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+        
+            <!-- Campo para el email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <!-- Campo para comentarios -->
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea><br><br>
+        
+            <!-- Botón para enviar el formulario -->
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/HotelSolearesMDP" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/hotelsoleares/" target="_blank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/HotelSoleares" target="_blank">Instagram</a>        
+            </li>
+            <li>
+                <a href="https://ar.linkedin.com/company/hotel-soleares" target="_blank">Linkedin</a>        
+            </li>
+        </ul>
+
+    </footer>
+    <section>
+        <a href="https://wa.me/5492235446923" target="_blank"> <img class="img_whatsapp" src="../assets/img/whatsapp.png"></a>       
+    </section>
+
+</body>
+</html>
