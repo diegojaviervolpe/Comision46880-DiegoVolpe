@@ -5,29 +5,35 @@
     --naranja-logo: #e68106;
     --celeste-logo: #16adc8;
     --azul-logo: #0287c0;
+    --menu-activo: #1e78fd;
+    
 }
 
-html { font-size: 65.5%;}
-body { max-width: 64rem; margin: auto;}
+html { }
+body { max-width: 1320px; margin: auto;}
 
 
 /* HEADER */
 header { display: flex; align-items: center; justify-content: space-between;}
-header .logo {  width: 12.5rem; }
+header .logo {  
+    width: 12.25rem; 
+    height: 4.5rem; 
+}
+
 header nav ul { margin-top: .8125rem; list-style-type: none; padding: 0;  display: flex; gap: 3px;}
 header nav ul li {margin: .625rem;}
 header nav ul li a 
 { 
     float:right; 
-    font-size: 1.10rem; 
+    font-size: 0.9rem; 
     text-decoration: none; 
-    font-weight: 600; 
+    font-weight: 500; 
     display: inline; 
     color:#222;
 }
 
-header nav ul li a:hover { color: var(--naranja-logo); }
-.menuactivo { color: var(--naranja-logo); }
+header nav ul li a:hover { color: var(--menu-activo); }
+.menuactivo { color: var(--menu-activo); }
 
 
 
@@ -44,6 +50,10 @@ p, a { font-family: 'Montserrat', sans-serif; font-size: 1.1875rem; font-weight:
 .imagenBanner { width: 100%; border: 1px solid #CCCCCC; border-radius: 10px;}
 .imagenHotelInicio {width: 18.75rem; height: 12.5rem; padding: .1875rem; background-color: #FFFFFF; border: 1px solid #CCCCCC; border-radius: 10px;} 
 
+hr {
+    margin: 15px 0 15px 0;
+    color: #fffbfb;
+}
 
 /* GRID */
 .contenedor-grids
@@ -136,6 +146,11 @@ p, a { font-family: 'Montserrat', sans-serif; font-size: 1.1875rem; font-weight:
 .card-3 { order: 3; }
 .card-4 { order: 1; }
 
+.titulo_principal 
+{
+    margin: .3125rem 0 .3125rem .625rem;
+}
+
 /* FOOTER*/
 footer 
 { 
@@ -207,6 +222,24 @@ footer ul li a
         width: 100%;
         height: 300px;
     }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra los ítems horizontalmente */
+        margin-bottom: .65rem;
+    }
+
+    header nav ul li {
+        margin: .3125rem 0; /* Ajuste para separación vertical */
+    }
+
+    header nav ul li a {
+        text-align: center; /* Centra el texto dentro del enlace */
+    }
 }
 
 @media (max-width: 425px) 
@@ -233,7 +266,13 @@ footer ul li a
 
 @media (max-width: 375px) 
 {
-
+    header .logo {  
+        width: 12.25rem; 
+        height: 4.5rem; 
+        display: block;
+        margin: 0 auto;
+    }
+    
     .contenedor-grids
     {
         display: grid;
@@ -254,6 +293,13 @@ footer ul li a
 
 @media (max-width: 320px) 
 {
+    header .logo {  
+        width: 12.25rem; 
+        height: 4.5rem; 
+        display: block;
+        margin: 0 auto;
+    }
+
     .contenedor-grids
     {
         display: grid;
@@ -271,3 +317,8 @@ footer ul li a
         align-items: center;
     }
 }
+
+
+
+
+
