@@ -1,0 +1,23 @@
+/* Utilities */
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+/* Components */
+/* Layout/Media */
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.625rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

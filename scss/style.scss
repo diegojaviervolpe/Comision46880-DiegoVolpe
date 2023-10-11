@@ -1,0 +1,30 @@
+/* Bootstrap */
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+/* Utilities */
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/functions";
+
+/* Base */
+@import "./base/reset";
+@import "./base/typo";
+
+/* Layout */
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/navbar";
+@import "./layout/main-index";
+@import "./layout/main-servicios";
+@import "./layout/main-lugaresrecomendados";
+@import "./layout/main-habitaciones";
+@import "./layout/main-contacto";
+
+/* Components */
+@import "./components/bootstrap";
+@import "./components/card";
+
+/* Layout/Media */
+@import "./layout/media/media768";
+@import "./layout/media/media320";

@@ -1,0 +1,5 @@
+@media(max-width: 768px){
+    header{
+        @include flex(column, wrap, flex-start, center, .625rem)
+    }
+}
