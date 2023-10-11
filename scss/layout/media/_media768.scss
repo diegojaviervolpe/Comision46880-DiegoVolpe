@@ -1,5 +1,52 @@
+/*
 @media(max-width: 768px){
     header{
         @include flex(column, wrap, flex-start, center, .625rem)
+    }
+}
+*/
+
+@media (max-width: 768px) 
+{
+
+    .contenedor-grids
+    {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, auto);
+        justify-content: center;
+        grid-template-areas: 
+        "grid1" 
+        "grid2" 
+        "grid3" 
+        "grid4" 
+        "grid5" 
+        "grid6";
+        align-items: center;
+    }
+
+    .imagenHotelInicio
+    {
+        width: 100%;
+        height: 300px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra los ítems horizontalmente */
+        margin-bottom: .65rem;
+    }
+
+    header nav ul li {
+        margin: .3125rem 0; /* Ajuste para separación vertical */
+    }
+
+    header nav ul li a {
+        text-align: center; /* Centra el texto dentro del enlace */
     }
 }

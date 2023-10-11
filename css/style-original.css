@@ -1,39 +1,9 @@
-*{ margin: 0; padding: 0; box-sizing: border-box; }
-
-:root
-{
-    --naranja-logo: #e68106;
-    --celeste-logo: #16adc8;
-    --azul-logo: #0287c0;
-    --menu-activo: #1e78fd;
-    
-}
 
 html { }
 body { max-width: 1320px; margin: auto;}
 
 
 /* HEADER */
-header { display: flex; align-items: center; justify-content: space-between;}
-header .logo {  
-    width: 12.25rem; 
-    height: 4.5rem; 
-}
-
-header nav ul { margin-top: .8125rem; list-style-type: none; padding: 0;  display: flex; gap: 3px;}
-header nav ul li {margin: .625rem;}
-header nav ul li a 
-{ 
-    float:right; 
-    font-size: 0.9rem; 
-    text-decoration: none; 
-    font-weight: 500; 
-    display: inline; 
-    color:#222;
-}
-
-header nav ul li a:hover { color: var(--menu-activo); }
-.menuactivo { color: var(--menu-activo); }
 
 
 
@@ -151,34 +121,7 @@ hr {
     margin: .3125rem 0 .3125rem .625rem;
 }
 
-/* FOOTER*/
-footer 
-{ 
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center; 
-    background-color: var(--azul-logo); 
-    width: 100%; 
-    height: 3.125rem;
-    align-items: center;
-    padding-right: 10px;
-    margin: 20px 0 10px 0;
-    border-radius: 2px;
-}
 
-footer ul { list-style-type: none; padding: 0;  display: flex; gap: 3px;}
-footer ul li {margin: .625rem;}
-footer ul li a 
-{ 
-    float:right; 
-    font-size: 1.10rem; 
-    text-decoration: none; 
-    font-weight: 600; 
-    display: inline;
-    color: #FFFFFF;
-}
 
 .img_whatsapp 
 { 
@@ -191,132 +134,7 @@ footer ul li a
 }
 
 
-/* Media Responsive */
-@media (max-width: 1024px) 
-{
-    header nav ul li a { font-size: 1rem; }
-}
 
-@media (max-width: 768px) 
-{
-
-    .contenedor-grids
-    {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
-        justify-content: center;
-        grid-template-areas: 
-        "grid1" 
-        "grid2" 
-        "grid3" 
-        "grid4" 
-        "grid5" 
-        "grid6";
-        align-items: center;
-    }
-
-    .imagenHotelInicio
-    {
-        width: 100%;
-        height: 300px;
-    }
-
-    header {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center; /* Centra los ítems horizontalmente */
-        margin-bottom: .65rem;
-    }
-
-    header nav ul li {
-        margin: .3125rem 0; /* Ajuste para separación vertical */
-    }
-
-    header nav ul li a {
-        text-align: center; /* Centra el texto dentro del enlace */
-    }
-}
-
-@media (max-width: 425px) 
-{
-
-    .contenedor-grids
-    {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(7, auto);
-        justify-content: center;
-        grid-template-areas: 
-        "gridbanner" 
-        "grid1" 
-        "grid2" 
-        "grid3" 
-        "grid4" 
-        "grid5" 
-        "grid6";
-        align-items: center;
-    }
-}
-
-@media (max-width: 375px) 
-{
-    header .logo {  
-        width: 12.25rem; 
-        height: 4.5rem; 
-        display: block;
-        margin: 0 auto;
-    }
-    
-    .contenedor-grids
-    {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
-        justify-content: center;
-        grid-template-areas: 
-        "grid1" 
-        "grid2" 
-        "grid3" 
-        "grid4" 
-        "grid5" 
-        "grid6";
-        align-items: center;
-    }
-}
-
-@media (max-width: 320px) 
-{
-    header .logo {  
-        width: 12.25rem; 
-        height: 4.5rem; 
-        display: block;
-        margin: 0 auto;
-    }
-
-    .contenedor-grids
-    {
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
-        justify-content: center;
-        grid-template-areas: 
-        "grid1" 
-        "grid2" 
-        "grid3" 
-        "grid4" 
-        "grid5" 
-        "grid6";
-        align-items: center;
-    }
-}
 
 
 

@@ -1,20 +1,16 @@
-@media (max-width: 320px) 
+
+@media (max-width: 425px) 
 {
-    header .logo {  
-        width: 12.25rem; 
-        height: 4.5rem; 
-        display: block;
-        margin: 0 auto;
-    }
 
     .contenedor-grids
     {
         display: grid;
         width: 100%;
         grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
+        grid-template-rows: repeat(7, auto);
         justify-content: center;
         grid-template-areas: 
+        "gridbanner" 
         "grid1" 
         "grid2" 
         "grid3" 

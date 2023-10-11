@@ -1,5 +1,5 @@
 /* Bootstrap */
-@import 'node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 /* Utilities */
 @import "./utilities/variables";
@@ -10,6 +10,9 @@
 /* Base */
 @import "./base/reset";
 @import "./base/typo";
+@import "./base/titles-parrafos";
+@import "./base/banners";
+@import "./base/whatsapp_flotante";
 
 /* Layout */
 @import "./layout/header";
@@ -26,5 +29,8 @@
 @import "./components/card";
 
 /* Layout/Media */
+@import "./layout/media/media1024";
 @import "./layout/media/media768";
+@import "./layout/media/media425";
+@import "./layout/media/media375"; 
 @import "./layout/media/media320";
