@@ -2,16 +2,14 @@
 /* FLEX */
 .contenedor-cards
 {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(row, wrap, space-evenly, flex-start, 20px);
     margin: 1.25rem 0 1.25rem 0;
-    justify-content: space-evenly;
 }
 
 .card 
 {
     width: 30rem;
-    background-color: #fff9eb;
+    background-color: map-get($map: $colores-fondo, $key: amarillo);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 2px 2px .625rem #cccccc;

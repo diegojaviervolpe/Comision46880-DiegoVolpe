@@ -1,61 +1,68 @@
-
-/* GRID */
 .contenedor-grids
 {
-    display: grid;
+    @include grid (repeat(3, 1fr), repeat(4, auto), center, center, 30px);
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    justify-content: center;
     grid-template-areas: 
     "gridbanner gridbanner gridbanner" 
     "grid1 grid2 grid2" 
     "grid4 grid4 grid3" 
     "grid5 grid6 grid6";
-    align-items: center;
 }
 
-.grid-banner 
-{
+.grid_default {
+    padding: .625rem;
+}
+
+.cover-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-banner {
     height: 250px;
     grid-area: gridbanner;
 }
-.grid-banner img { object-fit: cover; width: 100%; height: 100%;}
 
-.grid-uno
-{
+.grid-uno{
+    @extend .grid-default !optional;
     grid-area: grid1;
-    padding: .625rem;
 }
 
-.grid-uno img { object-fit: cover; width: 100%; height: 100%;}
 
-.grid-dos
-{
+.grid-dos{
+    @extend .grid-default !optional;
     grid-area: grid2;
-    padding: .625rem;
 }
 
 .grid-tres
 {
+    @extend .grid-default !optional;
     grid-area: grid3;
-    padding: .625rem;
 }
 
 .grid-cuatro
 {
+    @extend .grid-default !optional;
     grid-area: grid4;
-    padding: .625rem;
 }
 
 .grid-cinco
 {
+    @extend .grid-default !optional;
     grid-area: grid5;
-    padding: .625rem;
 }
 
 .grid-seis
 {
+    @extend .grid-default !optional;
     grid-area: grid6;
-    padding: .625rem;
+}
+
+.grid-banner img{
+    @extend .cover-image;
+}
+
+.grid-uno img {
+    @extend .cover-image;
 }

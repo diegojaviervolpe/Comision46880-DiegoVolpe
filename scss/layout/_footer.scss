@@ -35,7 +35,7 @@ footer
 
     .fondo_final
     {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: map-get($map: $colores-fondo, $key: negro);
     }
 
     .fondo-facebook

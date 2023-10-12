@@ -3,10 +3,10 @@
 .titulo_principal {margin: .3125rem 0 .3125rem .625rem;}
 
 h1,h2,h3,h4,h5 { font-family: 'Manrope', sans-serif; font-weight: 600; }
-h1 { font-size: 1.375rem;  margin: 20px 0 20px 0; color:var(--azul-logo)  }
-h2 { font-size: 1.25rem; margin-bottom: 10px; color:var(--celeste-logo)  }
-h3 { font-size: 1.1875rem;  margin-bottom: 10px; color:var(--celeste-logo)}
-h4 { font-size: 1rem;  margin-bottom: 10px;color:var(--celeste-logo)}
+h1 { font-size: map-get($map: $font-size, $key: xxl );  margin: 20px 0 20px 0; color:var(--azul-logo)  }
+h2 { font-size: map-get($map: $font-size, $key: xl ); margin-bottom: 10px; color:var(--celeste-logo)  }
+h3 { font-size: map-get($map: $font-size, $key: md );  margin-bottom: 10px; color:var(--celeste-logo)}
+h4 { font-size: map-get($map: $font-size, $key: sm );  margin-bottom: 10px;color:var(--celeste-logo)}
 
 /* Parrafos y Anclas*/
 p, a { font-family: 'Montserrat', sans-serif; font-size: 1.1875rem; font-weight: 200; }
