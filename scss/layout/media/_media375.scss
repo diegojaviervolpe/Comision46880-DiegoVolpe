@@ -2,20 +2,32 @@
 
 @media (max-width: 375px) 
 {
-    header .logo {  
-        width: 12.25rem; 
-        height: 4.5rem; 
-        display: block;
-        margin: 0 auto;
+    
+    header { 
+        border-bottom: 1px solid #ccc;
+        .navbar-toggler
+        {
+            margin: 20px;
+        }
+        .logo {  
+            width: 12.25rem; 
+            height: 4.5rem; 
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    main{
+        .titulo{
+            margin-top: 10px;
+        }
     }
     
     .contenedor-grids
     {
-        display: grid;
+        @include grid (100%, repeat(6, auto), center, center, 30px);
+
         width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
-        justify-content: center;
         grid-template-areas: 
         "grid1" 
         "grid2" 
@@ -23,6 +35,6 @@
         "grid4" 
         "grid5" 
         "grid6";
-        align-items: center;
     }
+
 }

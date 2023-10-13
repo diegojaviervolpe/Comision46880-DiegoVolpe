@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/png" sizes="16x16"  href="../assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Servicios del Hotel Soleares en Mar del Plata</title>
     <meta name="keywords" content="Servicios Hotel Soleares, Desayuno en Hotel Soleares, Recepción y Check-In Hotel Soleares, Alojamiento en Mar del Plata, Servicios de hotel en Mar del Plata">
     <meta name="description" content="Conoce los servicios que el Hotel Soleares tiene para ofrecerte. Desde un delicioso desayuno americano hasta un eficiente proceso de check-in. ¡Experimenta una estadía llena de comodidad y atención en Mar del Plata!">
@@ -21,32 +25,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7442b7ae8c.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <title>Servicios del Hotel Soleares</title>
 </head>
 <body>
     <header class="container">
         <div class="row align-items-center">
             <!-- Logo -->
-            <div class="col-6 col-sm-9 col-md-3 col-lg-2 col-xl-2">
-                <img class="img-fluid d-block mx-auto" src="../assets/img/logo.png">
+            <div class="col-8 offset-2 offset-md-0 col-md-3 col-lg-2 text-center">
+                <img class="logo img-fluid d-block mx-auto" src="../assets/img/logo.png">
             </div>
+    
             <!-- Menú -->
-            <div class="col-6 col-sm-3 col-md-9 col-lg-10 col-xl-10">
+            <div class="col-12 col-md-9 col-lg-10">
                 <nav class="navbar navbar-expand-md navbar-light p-0">
-                    <button class="navbar-toggler ml-auto ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-md-auto text-center ms-auto">
+                        <ul class="navbar-nav  ms-auto text-center">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../pages/habitaciones.html">Habitaciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-primary text-bold" href="#">Nuestros Servicios</a>
+                                <a class="nav-link text-primary text-bold" href="../pages/servicios.html">Nuestros Servicios</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../pages/lugaresrecomendados.html">Lugares de Interes</a>
@@ -62,35 +68,47 @@
     </header>
 
     <main class="container">
-        <div class="row">
-            <div class="col-12">
-                <img class="img-fluid" src="../assets/img/banner.png">
-            </div>
-        </div>
 
-        <div class="row mt-5">
+        <div class="row mt-3">
             <div class="col-12">
                 <h1>Servicios del Hotel Soleares</h1>
             </div>
         </div>
 
-        <img class="imagenHotelInicio" src="../assets/img/desayuno.png">
-        <h2 class="titulo">Desayuno en el Hotel Soleares</h2>
-        <p>Comience su día con energía y sabor en Hotel Soleares con nuestro tradicional desayuno americano. Diseñado pensando en nuestros huéspedes que buscan un inicio nutritivo y lleno de sabor para su jornada, este desayuno es el equilibrio perfecto entre delicia y sustancia.
-            Al sentarse en nuestro comedor, se encontrará con una selección cuidadosamente escogida para satisfacer a todos los paladares. Disfrute de nuestras tostadas crujientes con mantequilla y mermelada, y sumérjase en el sabor dulce y suave de nuestras medialunas, recién horneadas y perfectas para acompañar con una bebida caliente.
-            El aroma del café recién hecho será el protagonista, fuerte y aromático, diseñado para despertar sus sentidos y prepararlo para el día que tiene por delante. También ofrecemos una variedad de tés y zumos de fruta recién exprimidos para garantizar que cada huésped encuentre su bebida matutina ideal.
-            En Hotel Soleares, sabemos que un buen desayuno es el comienzo perfecto para un día productivo y memorable. Permítanos ser parte de ese inicio con nuestro inigualable desayuno americano.</p>      
-        <hr>
 
-        <img class="imagenHotelInicio" src="../assets/img/recepcion.png">
-        <h2 class="titulo">Recepcion y Check-In</h2>
-        <p>Desde el momento en que cruza las puertas del Hotel Soleares, nuestro objetivo es hacerle sentir bienvenido y atendido. La recepción, con su diseño elegante y ambiente acogedor, es la primera parada en su experiencia con nosotros.
-            Al llegar, será recibido por nuestro amable personal de recepción, quienes están capacitados para brindarle un check-in fluido y sin complicaciones. Sabemos que después de un largo viaje o un día agitado, lo que más desea es relajarse en su habitación, por eso nos esforzamos por hacer este proceso lo más rápido y eficiente posible.
-            Mientras se registra, aproveche para hacer cualquier pregunta o solicitud que pueda tener. Ya sea que necesite recomendaciones sobre atracciones locales, consejos de transporte o simplemente desee hacer una reserva en nuestro restaurante, estamos aquí para ayudar.
-            Además, si ha llegado antes de la hora oficial de check-in o necesita dejar sus maletas después del check-out, ofrecemos un servicio de consigna seguro y cómodo para que pueda moverse con libertad y sin cargas.
-            El comienzo de su estadía en Hotel Soleares es crucial para nosotros. La recepción no es solo un lugar para registrarse, es donde comienza su experiencia única con nosotros. Permítanos asegurarnos de que cada momento, desde su llegada hasta su partida, sea inolvidable.</p>        
 
-      
+        <div class="row">
+
+            <div class="col-12 col-md-6">
+              <div class="card w-100">
+                <img class="bd-placeholder-img card-img-top" src="../assets/img/desayuno.png">
+
+                <div class="card-body">
+                  <h5 class="card-title">Desayuno en el Hotel Soleares</h5>
+                  <p class="card-text">Comience su día con energía y sabor en Hotel Soleares con nuestro tradicional desayuno americano. Diseñado pensando en nuestros huéspedes que buscan un inicio nutritivo y lleno de sabor para su jornada, este desayuno es el equilibrio perfecto entre delicia y sustancia.
+                    Al sentarse en nuestro comedor, se encontrará con una selección cuidadosamente escogida para satisfacer a todos los paladares. Disfrute de nuestras tostadas crujientes con mantequilla y mermelada, y sumérjase en el sabor dulce y suave de nuestras medialunas, recién horneadas y perfectas para acompañar con una bebida caliente.
+                    El aroma del café recién hecho será el protagonista, fuerte y aromático, diseñado para despertar sus sentidos y prepararlo para el día que tiene por delante. También ofrecemos una variedad de tés y zumos de fruta recién exprimidos para garantizar que cada huésped encuentre su bebida matutina ideal.
+                    En Hotel Soleares, sabemos que un buen desayuno es el comienzo perfecto para un día productivo y memorable. Permítanos ser parte de ese inicio con nuestro inigualable desayuno americano.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card w-100">
+                  <img class="bd-placeholder-img card-img-top" src="../assets/img/recepcion.png">
+  
+                  <div class="card-body">
+                    <h5 class="card-title">Recepcion y Check-In</h5>
+                    <p class="card-text">
+                        Desde el momento en que cruza las puertas del Hotel Soleares, nuestro objetivo es hacerle sentir bienvenido y atendido. La recepción, con su diseño elegante y ambiente acogedor, es la primera parada en su experiencia con nosotros. Al llegar, será recibido por nuestro amable personal de recepción, quienes están capacitados para brindarle un check-in fluido y sin complicaciones. Sabemos que después de un largo viaje o un día agitado, lo que más desea es relajarse en su habitación, por eso nos esforzamos por hacer este proceso lo más rápido y eficiente posible. Mientras se registra, aproveche para hacer cualquier pregunta o solicitud que pueda tener. Ya sea que necesite recomendaciones sobre atracciones locales, consejos de transporte o simplemente desee hacer una reserva en nuestro restaurante, estamos aquí para ayudar. Además, si ha llegado antes de la hora oficial de check-in o necesita dejar sus maletas después del check-out, ofrecemos un servicio de consigna seguro y cómodo para que pueda moverse con libertad y sin cargas. El comienzo de su estadía en Hotel Soleares es crucial para nosotros. La recepción no es solo un lugar para registrarse, es donde comienza su experiencia única con nosotros. Permítanos asegurarnos de que cada momento, desde su llegada hasta su partida, sea inolvidable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+        </div>
+
+
 
 
     </main>
@@ -100,35 +118,17 @@
         <div class="container p-4 pb-0">
             <section>
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold"> Hotel Soleares </h6>
                         <p>
                             Ubicado cerca de la Reserva Forestal Bosque Peralta Ramos, el Hotel Soleares Mar del Plata cuenta con 15 habitaciones cómodas. El Acuario está a 10 minutos en coche de Hotel Soleares.
                         </p>
                     </div>
 
+                    
                     <hr class="w-100 clearfix d-md-none" />
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Mapa del Sitio</h6>
-                        <p>
-                            <a href="../pages/habitaciones.html" class="text-white">Habitaciones</a>
-                        </p>
-                        <p>
-                            <a href="../pages/servicios.html" class="text-white">Servicios</a>
-                        </p>
-                        <p>
-                            <a href="../pages/lugaresrecomendados.html" class="text-white">Lugares de Interes</a>
-                        </p>
-                        <p>
-                            <a href="../pages/contacto.html" class="text-white">Contactos/Reservas</a>
-                        </p>
-                    </div>
-
-                    <hr class="w-100 clearfix d-md-none" />
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Datos del Hotel</h6>
                         <p><i class="fas fa-home mr-3"></i> General Angel Pacheco 2168</p>
                         <p><i class="fas fa-envelope mr-3"></i> info@hotelsoleares.com.ar</p>
@@ -136,7 +136,9 @@
                         <p><i class="fas fa-print mr-3"></i> <a href="tel:+5492234842794">+54 9 223 4842794</a></p>
                     </div>
 
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos!</h6>
                         <a class="btn btn-primary btn-floating m-1 fondo-facebook" href="https://www.facebook.com/HotelSolearesMDP/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-primary btn-floating m-1 fondo twitter" href="https://twitter.com/HotelSoleares" target="_blank" ><i class="fab fa-twitter"></i></a>

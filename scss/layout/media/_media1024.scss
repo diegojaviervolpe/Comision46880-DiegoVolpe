@@ -2,6 +2,9 @@
 /* Media Responsive */
 @media (max-width: 1024px) 
 {
-    header nav ul li a { font-size: 1rem; }
+    header{
+        border-bottom: 1px solid #ccc;
+        nav ul li a { font-size: 1rem; }
+    }
 }
 

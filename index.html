@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/png" sizes="16x16"  href="./assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <title>Bienvenido al Hotel Soleares - Hospedaje en Mar del Plata</title>
     <meta name="keywords" content="Hotel Soleares, hospedaje Mar del Plata, hotel cerca de la playa, habitaciones cómodas, hotel con desayuno, conexión wifi gratis">
     <meta name="description" content="El Soleares, ubicado a solo 200 metros de la playa de Punta Mogotes, ofrece habitaciones cómodas, desayuno diario y conexión de wifi gratis. El centro de Mar del Plata está a 6 km.">
@@ -21,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600&family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7442b7ae8c.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </head> 
 <body>
@@ -28,7 +34,7 @@
         <div class="row align-items-center">
             <!-- Logo -->
             <div class="col-8 offset-2 offset-md-0 col-md-3 col-lg-2 text-center">
-                <img class="img-fluid d-block mx-auto" src="./assets/img/logo.png">
+                <img class="logo img-fluid d-block mx-auto" src="./assets/img/logo.png">
             </div>
     
             <!-- Menú -->
@@ -61,40 +67,40 @@
         </div>
     </header>
     
-    
-
-    <main class="container">
-        <div class="row my-3">
-
+        
+    <div class="container-fluid">
+        <div class="row my-0">
             <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/banner.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/banner2.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./assets/img/banner3.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/banner.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/banner2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/banner3.png" class="d-block w-100" alt="...">
+            </div>
+            </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-
-
+            </div>
         </div>
+    </div>
+
+    <main class="container">
+
         <div class="row my-3">
                 <h1 class="mt-5">Bienvenido al Hotel Soleares</h1>
                 <p>
@@ -123,35 +129,17 @@
         <div class="container p-4 pb-0">
             <section>
                 <div class="row">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold"> Hotel Soleares </h6>
                         <p>
                             Ubicado cerca de la Reserva Forestal Bosque Peralta Ramos, el Hotel Soleares Mar del Plata cuenta con 15 habitaciones cómodas. El Acuario está a 10 minutos en coche de Hotel Soleares.
                         </p>
                     </div>
 
+                    
                     <hr class="w-100 clearfix d-md-none" />
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Mapa del Sitio</h6>
-                        <p>
-                            <a href="./pages/habitaciones.html" class="text-white">Habitaciones</a>
-                        </p>
-                        <p>
-                            <a href="./pages/servicios.html" class="text-white">Servicios</a>
-                        </p>
-                        <p>
-                            <a href="./pages/lugaresrecomendados.html" class="text-white">Lugares de Interes</a>
-                        </p>
-                        <p>
-                            <a href="./pages/contacto.html" class="text-white">Contactos/Reservas</a>
-                        </p>
-                    </div>
-
-                    <hr class="w-100 clearfix d-md-none" />
-                    <hr class="w-100 clearfix d-md-none" />
-
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Datos del Hotel</h6>
                         <p><i class="fas fa-home mr-3"></i> General Angel Pacheco 2168</p>
                         <p><i class="fas fa-envelope mr-3"></i> info@hotelsoleares.com.ar</p>
@@ -159,7 +147,9 @@
                         <p><i class="fas fa-print mr-3"></i> <a href="tel:+5492234842794">+54 9 223 4842794</a></p>
                     </div>
 
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <div class="col-12 col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Siguenos!</h6>
                         <a class="btn btn-primary btn-floating m-1 fondo-facebook" href="https://www.facebook.com/HotelSolearesMDP/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-primary btn-floating m-1 fondo twitter" href="https://twitter.com/HotelSoleares" target="_blank" ><i class="fab fa-twitter"></i></a>

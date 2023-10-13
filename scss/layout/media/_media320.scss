@@ -9,11 +9,9 @@
 
     .contenedor-grids
     {
-        display: grid;
+        @include grid (100%, repeat(6, auto), center, center, 30px);
+
         width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(6, auto);
-        justify-content: center;
         grid-template-areas: 
         "grid1" 
         "grid2" 
@@ -21,6 +19,14 @@
         "grid4" 
         "grid5" 
         "grid6";
-        align-items: center;
     }
+
+
+    main{
+        .titulo{
+            margin-top: 10px;
+        }
+    }
+    
+
 }

@@ -1,8 +1,21 @@
+@keyframes moverLogo {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
 header { 
     @include flex(row, wrap, space-evenly, center, 20px);
-    .logo {  
-        width: 12.25rem; 
-        height: 4.5rem; 
+    border-bottom: 1px solid #ccc;
+    .logo {
+        animation: moverLogo 1s ease-in-out;
     }
     nav ul { 
         margin-top: .8125rem; 

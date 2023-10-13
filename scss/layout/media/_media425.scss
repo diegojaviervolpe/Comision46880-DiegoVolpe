@@ -2,13 +2,23 @@
 @media (max-width: 425px) 
 {
 
+    header { 
+        border-bottom: 1px solid #ccc;
+        .navbar-toggler
+        {
+            margin: 20px;
+        }
+    }
+    main{
+        .titulo{
+            margin-top: 10px;
+        }
+    }
+    
     .contenedor-grids
     {
-        display: grid;
+        @include grid (100%, repeat(7, auto), center, center, 30px);
         width: 100%;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(7, auto);
-        justify-content: center;
         grid-template-areas: 
         "gridbanner" 
         "grid1" 
@@ -17,6 +27,6 @@
         "grid4" 
         "grid5" 
         "grid6";
-        align-items: center;
     }
+
 }
