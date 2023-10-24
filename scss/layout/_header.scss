@@ -13,29 +13,76 @@
   
 header { 
     @include flex(row, wrap, space-evenly, center, 20px);
+
+    padding: 5px 0px;
+
     border-bottom: 1px solid #ccc;
     .logo {
         animation: moverLogo 1s ease-in-out;
     }
-    nav ul { 
-        margin-top: .8125rem; 
+
+    .menu 
+    {
+      display: block!important;
+
+      nav ul { 
+        //margin-top: .8125rem; 
         list-style-type: none; 
         padding: 0;  
         display: flex; 
-        gap: 3px;
+        gap: 3px;        
         li 
         {
-            margin: .625rem;
+            //margin: .625rem;
+            margin: 0;
+            z-index: 203;
+            display: block;
+            float: left;
+            position: relative;
+
+            &:last-child  a span{
+            border: none;
+            }
+
             a 
             { 
+
+                font-size: 19px;
+                font-weight: 500;
+                letter-spacing: 0px;
+                
                 float:right; 
                 font-size: 0.9rem; 
                 text-decoration: none; 
                 font-weight: 500; 
                 display: inline; 
-                color:#222;
+                color: #666666;
+                padding: 5px 0;
+                display: block;
+                line-height: 60px;
+                position: relative;
+
+
+                span{
+                  display: block;
+                  line-height: 60px;
+                  padding: 0 20px;
+                  white-space: nowrap;
+                  border-right: 1px solid #ccc;
+                  border-color: rgba(0,0,0,.05);
+
+                }
+
+              &:hover { 
+                color: $menu-activo; 
+              }
             }
-            &:hover { color: $menu-activo; }
+
+            .active { 
+              color: $menu-activo; 
+            }
         }
+      }
     }
+
 }
