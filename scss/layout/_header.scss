@@ -14,9 +14,10 @@
 header { 
     @include flex(row, wrap, space-evenly, center, 20px);
 
-    padding: 5px 0px;
-
+    padding: 0px 0px;
     border-bottom: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.05);
+    
     .logo {
         animation: moverLogo 1s ease-in-out;
     }
@@ -52,7 +53,7 @@ header {
                 letter-spacing: 0px;
                 
                 float:right; 
-                font-size: 0.9rem; 
+                font-size: 1.03rem; 
                 text-decoration: none; 
                 font-weight: 500; 
                 display: inline; 
@@ -79,6 +80,7 @@ header {
             }
 
             .active { 
+              border-top: 2px solid burlywood;
               color: $menu-activo; 
             }
         }

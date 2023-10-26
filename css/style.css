@@ -9373,8 +9373,9 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 20px;
-  padding: 5px 0px;
-  border-bottom: 1px solid #ccc; }
+  padding: 0px 0px;
+  border-bottom: 1px solid #ccc;
+  border-color: rgba(0, 0, 0, 0.05); }
   header .logo {
     animation: moverLogo 1s ease-in-out; }
   header .menu {
@@ -9397,7 +9398,7 @@ header {
           font-weight: 500;
           letter-spacing: 0px;
           float: right;
-          font-size: 0.9rem;
+          font-size: 1.03rem;
           text-decoration: none;
           font-weight: 500;
           display: inline;
@@ -9416,6 +9417,7 @@ header {
           header .menu nav ul li a:hover {
             color: #cd9540; }
         header .menu nav ul li .active {
+          border-top: 2px solid burlywood;
           color: #cd9540; }
 
 /* FOOTER*/
