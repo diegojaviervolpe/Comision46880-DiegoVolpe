@@ -24,15 +24,45 @@
         flex-direction: column;
         border-bottom: 1px solid #ccc;
         
+        .logo{
+            width: 194px !important;
+        }
+        
         nav ul {
             flex-direction: column;
             align-items: center; /* Centra los ítems horizontalmente */
-            margin-bottom: .65rem;
+            margin: 0px;
+            margin-bottom: 20px !important;
 
             li {
                 margin: .3125rem 0; /* Ajuste para separación vertical */
+                width: 100%;
                 a {
+                    &.active{
+                        border-top: 0px !important;
+                    }
+
+                    font-size: 20px !important;
                     text-align: center; /* Centra el texto dentro del enlace */
+                    line-height: 40px;
+                    color: #cd9540;
+                    width: 100%;
+                    border-bottom: 1px solid #ccc;
+                    margin: 0px;
+                    text-align: end;
+                    padding: 10px 0 !important;
+                    span
+                    {
+                        display: block !important;
+                        line-height: 20px !important;
+                        padding: 0px !important;
+                        white-space: normal !important;
+                        border-right: none !important;
+                        border-right-color: none !important;
+                        border-color: none !important;
+
+                    }
+
                 }
             }
         }

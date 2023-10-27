@@ -6,21 +6,34 @@
     margin: 1.25rem 0 1.25rem 0;
 }
 
-.card 
-{
-    width: 30rem;
-    background-color: map-get($map: $colores-fondo, $key: amarillo);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 2px 2px .625rem #cccccc;
-    margin: 5px 10px 5px 10px;
-    padding: .625rem;
-
-    .titulo { margin: 5px 0;}
-    img { width: 100%; }
+.bannertop_recomendados{
+    height: 240px;
+    background-image: url('../assets/img/banners/1.jpg');
+    background-position-y: initial;
+    background-position-x: center;
 }
 
-.card-1 { order: 2; }
-.card-2 { order: 4; }
-.card-3 { order: 3; }
-.card-4 { order: 1; }
+.tarjetas 
+{
+    .card 
+    {
+        width: 38rem;
+        background-color: map-get($map: $colores-fondo, $key: amarillo);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px .625rem #cccccc;
+        margin: 5px 10px 5px 10px;
+        padding: .625rem;
+    
+        .titulo { margin: 5px 0;}
+        img { width: 100%; height: auto; }
+    }
+
+    .card-1 { order: 2; }
+    .card-2 { order: 4; }
+    .card-3 { order: 3; }
+    .card-4 { order: 1; }
+
+}
+
+

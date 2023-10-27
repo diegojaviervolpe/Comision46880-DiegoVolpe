@@ -9377,7 +9377,8 @@ header {
   border-bottom: 1px solid #ccc;
   border-color: rgba(0, 0, 0, 0.05); }
   header .logo {
-    animation: moverLogo 1s ease-in-out; }
+    animation: moverLogo 1s ease-in-out;
+    max-width: 200px; }
   header .menu {
     display: block !important; }
     header .menu nav ul {
@@ -9410,7 +9411,7 @@ header {
           header .menu nav ul li a span {
             display: block;
             line-height: 60px;
-            padding: 0 20px;
+            padding: 0 10px;
             white-space: nowrap;
             border-right: 1px solid #ccc;
             border-color: rgba(0, 0, 0, 0.05); }
@@ -9466,6 +9467,18 @@ footer {
     footer a:hover {
       font-weight: 600; }
 
+.bannertop {
+  height: 240px;
+  background-image: url("../assets/img/banners/7.jpg");
+  background-position-y: initial;
+  background-position-x: center; }
+
+.bannertop_servicios {
+  height: 240px;
+  background-image: url("../assets/img/banners/2.jpg");
+  background-position-y: initial;
+  background-position-x: center; }
+
 /* FLEX */
 .contenedor-cards {
   display: flex;
@@ -9476,30 +9489,43 @@ footer {
   gap: 20px;
   margin: 1.25rem 0 1.25rem 0; }
 
-.card {
-  width: 30rem;
+.bannertop_recomendados {
+  height: 240px;
+  background-image: url("../assets/img/banners/1.jpg");
+  background-position-y: initial;
+  background-position-x: center; }
+
+.tarjetas .card {
+  width: 38rem;
   background-color: #fff9eb;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px .625rem #cccccc;
   margin: 5px 10px 5px 10px;
   padding: .625rem; }
-  .card .titulo {
+  .tarjetas .card .titulo {
     margin: 5px 0; }
-  .card img {
-    width: 100%; }
+  .tarjetas .card img {
+    width: 100%;
+    height: auto; }
 
-.card-1 {
+.tarjetas .card-1 {
   order: 2; }
 
-.card-2 {
+.tarjetas .card-2 {
   order: 4; }
 
-.card-3 {
+.tarjetas .card-3 {
   order: 3; }
 
-.card-4 {
+.tarjetas .card-4 {
   order: 1; }
+
+.bannertop_habitaciones {
+  height: 240px;
+  background-image: url("../assets/img/banners/6.jpg");
+  background-position-y: bottom;
+  background-position-x: center; }
 
 .contenedor-grids {
   display: grid;
@@ -9509,7 +9535,7 @@ footer {
   align-content: center;
   gap: 30px;
   width: 100%;
-  grid-template-areas: "gridbanner gridbanner gridbanner"  "grid1 grid2 grid2"  "grid4 grid4 grid3"  "grid5 grid6 grid6"; }
+  grid-template-areas: "gridbanner gridbanner gridbanner"  "grid1 grid2 grid2"  "grid3 grid4 grid4"  "grid5 grid6 grid6"; }
 
 .grid_default {
   padding: .625rem; }
@@ -9542,13 +9568,24 @@ footer {
   grid-area: grid6; }
 
 /* Components */
+.btn-marron {
+  background-color: #d59c46;
+  border: 1px solid #997d4d;
+  color: #FFFFFF; }
+  .btn-marron:hover {
+    background-color: #95713a;
+    border: 1px solid #997d4d;
+    color: #FFFFFF; }
+
 /* Layout/Media */
 /* Media Responsive */
 @media (max-width: 1024px) {
   header {
     border-bottom: 1px solid #ccc; }
     header nav ul li a {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+    header .logo {
+      width: 194px !important; } }
 
 @media (max-width: 768px) {
   .contenedor-grids {
@@ -9566,17 +9603,39 @@ footer {
   header {
     flex-direction: column;
     border-bottom: 1px solid #ccc; }
+    header .logo {
+      width: 194px !important; }
     header nav ul {
       flex-direction: column;
       align-items: center;
       /* Centra los ítems horizontalmente */
-      margin-bottom: .65rem; }
+      margin: 0px;
+      margin-bottom: 20px !important; }
       header nav ul li {
         margin: .3125rem 0;
-        /* Ajuste para separación vertical */ }
+        /* Ajuste para separación vertical */
+        width: 100%; }
         header nav ul li a {
+          font-size: 20px !important;
           text-align: center;
-          /* Centra el texto dentro del enlace */ }
+          /* Centra el texto dentro del enlace */
+          line-height: 40px;
+          color: #cd9540;
+          width: 100%;
+          border-bottom: 1px solid #ccc;
+          margin: 0px;
+          text-align: end;
+          padding: 10px 0 !important; }
+          header nav ul li a.active {
+            border-top: 0px !important; }
+          header nav ul li a span {
+            display: block !important;
+            line-height: 20px !important;
+            padding: 0px !important;
+            white-space: normal !important;
+            border-right: none !important;
+            border-right-color: none !important;
+            border-color: none !important; }
     header .navbar-toggler {
       margin: 20px; }
   main .titulo {
@@ -9625,10 +9684,10 @@ footer {
 
 @media (max-width: 320px) {
   header .logo {
-    width: 12.25rem;
     height: 4.5rem;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 200px; }
   .contenedor-grids {
     display: grid;
     grid-template-columns: 100%;

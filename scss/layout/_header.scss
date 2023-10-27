@@ -20,6 +20,7 @@ header {
     
     .logo {
         animation: moverLogo 1s ease-in-out;
+        max-width: 200px;
     }
 
     .menu 
@@ -67,7 +68,7 @@ header {
                 span{
                   display: block;
                   line-height: 60px;
-                  padding: 0 20px;
+                  padding: 0 10px;
                   white-space: nowrap;
                   border-right: 1px solid #ccc;
                   border-color: rgba(0,0,0,.05);

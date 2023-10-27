@@ -1,3 +1,10 @@
+.bannertop_habitaciones{
+    height: 240px;
+    background-image: url('../assets/img/banners/6.jpg');
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
 .contenedor-grids
 {
     @include grid (repeat(3, 1fr), repeat(4, auto), center, center, 30px);
@@ -5,7 +12,7 @@
     grid-template-areas: 
     "gridbanner gridbanner gridbanner" 
     "grid1 grid2 grid2" 
-    "grid4 grid4 grid3" 
+    "grid3 grid4 grid4" 
     "grid5 grid6 grid6";
 }
 
